@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js Library (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- 3D Background Container -->
+    <div id="canvas-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">DEV<span>PORTFOLIO</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, It's Me</h3>
+            <h1>SONAKSHI SAHU</h1>
+            <h3>And I'm a <span class="highlight">Developer</span></h3>
+            <p>
+                I build high-performance applications using C++ and Java. 
+                I specialize in Python, DSA, and modern Frontend technologies.
+            </p>
+            <a href="#skills" class="btn">View Skills</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        
+        <div class="skills-container">
+            <!-- Skill Cards -->
+            <div class="skill-card">
+                <div class="icon">⚡</div>
+                <h3>C++</h3>
+                <p>OOP, STL, System Programming</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="icon">☕</div>
+                <h3>Java</h3>
+                <p>Spring Boot, Enterprise Apps</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🐍</div>
+                <h3>Python</h3>
+                <p>Automation, Data Science</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🗄️</div>
+                <h3>DBMS</h3>
+                <p>SQL, Database Design</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🧩</div>
+                <h3>DSA</h3>
+                <p>Algorithms, Problem Solving</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🎨</div>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2023 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+</html>
