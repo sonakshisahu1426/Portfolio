@@ -3,96 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    
-    <!-- Link to CSS -->
+    <meta name="description" content="Sonakshi Sahu - B.Tech Computer Science Engineering student portfolio.">
+    <title>Sonakshi Sahu | CSE Student</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Three.js Library (CDN) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
-    <!-- 3D Background Container -->
-    <div id="canvas-bg"></div>
+    <div id="canvas-bg" aria-hidden="true"></div>
 
-    <!-- Navigation -->
     <nav>
-        <div class="logo">DEV<span>PORTFOLIO</span></div>
+        <a href="#home" class="logo">SONA<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h3>Hello, It's Me</h3>
-            <h1>SONAKSHI SAHU</h1>
-            <h3>And I'm a <span class="highlight">Developer</span></h3>
-            <p>
-                I build high-performance applications using C++ and Java. 
-                I specialize in Python, DSA, and modern Frontend technologies.
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">B.Tech CSE Student • NIST University</p>
+                <h1>Hi, I'm <span class="highlight">SONAKSHI SAHU</span></h1>
+                <h2>Computer Science Engineering Student</h2>
+                <p class="hero-text">
+                    I’m building my foundation in C++, Python, Data Structures & Algorithms,
+                    and web development through hands-on projects. I’m also exploring AI
+                    and continuously learning by building.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About Me</p>
+                <h2>Learning. Building. Improving.</h2>
+            </div>
+            <div class="about-card">
+                <p>
+                    I am a Computer Science Engineering student at NIST University,
+                    currently focused on strengthening my programming and problem-solving
+                    skills. My current learning areas include C++, Python, Data Structures
+                    & Algorithms, Object-Oriented Programming, DBMS, Computer Networks,
+                    and frontend development.
+                </p>
+                <p>
+                    I enjoy turning what I learn into practical projects and am currently
+                    exploring AI development alongside my core CS preparation.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Technical Skills</p>
+                <h2>What I'm Learning & Using</h2>
+            </div>
+
+            <div class="skills-container">
+                <article class="skill-card">
+                    <div class="icon">C++</div>
+                    <h3>C++</h3>
+                    <p>Programming, problem solving, OOP and DSA practice.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">Py</div>
+                    <h3>Python</h3>
+                    <p>Programming fundamentals and current academic work.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">DSA</div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Arrays, strings, two pointers, sliding window, hashing, stacks and queues.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">OOP</div>
+                    <h3>Object-Oriented Programming</h3>
+                    <p>Learning core OOP concepts and applying them in programming practice.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">DB</div>
+                    <h3>DBMS</h3>
+                    <p>Database fundamentals and SQL concepts.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">WEB</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS and JavaScript for responsive web interfaces.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">Git</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, repositories and project deployment workflows.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="icon">CN</div>
+                    <h3>Computer Networks</h3>
+                    <p>Core networking concepts as part of my CS coursework.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Things I've Built</h2>
+            </div>
+
+            <div class="projects-container">
+                <article class="project-card">
+                    <div>
+                        <p class="project-tag">WEB DEVELOPMENT</p>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A responsive personal portfolio created to showcase my
+                            education, technical skills, projects and learning journey.
+                        </p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>GitHub Pages</span>
+                        </div>
+                    </div>
+                    <a class="project-link" href="https://sonakshisahu1426.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                </article>
+
+                <article class="project-card placeholder">
+                    <div>
+                        <p class="project-tag">COMING SOON</p>
+                        <h3>Project 02</h3>
+                        <p>
+                            A new project is currently in development. Check back soon
+                            for the completed project and implementation details.
+                        </p>
+                    </div>
+                    <span class="project-link disabled">In Progress</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Get In Touch</p>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <p class="contact-text">
+                I'm always open to connecting with fellow students, developers,
+                recruiters and people interested in technology.
             </p>
-            <a href="#skills" class="btn">View Skills</a>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
-        
-        <div class="skills-container">
-            <!-- Skill Cards -->
-            <div class="skill-card">
-                <div class="icon">⚡</div>
-                <h3>C++</h3>
-                <p>OOP, STL, System Programming</p>
+            <div class="contact-links">
+                <a href="mailto:sonakshisahu2020@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/sonakshi-sahu-b5966542a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/sonakshisahu1426" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            
-            <div class="skill-card">
-                <div class="icon">☕</div>
-                <h3>Java</h3>
-                <p>Spring Boot, Enterprise Apps</p>
-            </div>
+        </section>
+    </main>
 
-            <div class="skill-card">
-                <div class="icon">🐍</div>
-                <h3>Python</h3>
-                <p>Automation, Data Science</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">🗄️</div>
-                <h3>DBMS</h3>
-                <p>SQL, Database Design</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">🧩</div>
-                <h3>DSA</h3>
-                <p>Algorithms, Problem Solving</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">🎨</div>
-                <h3>Frontend</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p>© 2023 Your Name. All Rights Reserved.</p>
+    <footer>
+        <p>© 2026 Sonakshi Sahu. Built with HTML, CSS & JavaScript.</p>
     </footer>
 
-    <!-- Link to JS -->
     <script src="script.js"></script>
 </body>
 </html>
